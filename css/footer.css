@@ -1,0 +1,122 @@
+.page-footer {
+  padding: 100px 0;
+  background-color: var(--navy-blue);
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-textual {
+  margin-right: 120px;
+}
+
+.footer-description {
+  color: var(--cloud);
+}
+
+.footer-logo {
+  display: block;
+  color: var(--cloud);
+  margin-bottom: 16px;
+}
+
+.footer-description {
+  max-width: 264px;
+}
+
+.footer-part-heading {
+  display: block;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.footer-socials-list {
+  display: flex;
+  width: 208px;
+  justify-content: space-between;
+}
+
+.footer-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--iris);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: var(--green);
+}
+
+.footer-socials-icon {
+  fill: var(--cloud);
+}
+
+.footer-subscribe-form-wrapper {
+  margin-left: auto;
+}
+
+/*.footer-subscribe-form {
+  margin-left: auto;
+}*/
+
+.footer-subscribe-form-input {
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  height: 40px;
+  width: 264px;
+  padding: 8px 16px;
+  margin: 0;
+  outline: none;
+  background-color: inherit;
+  color: var(--white);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-form-input:focus {
+  border-color: var(--green);
+}
+
+.footer-subscribe-form-input::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--white);
+}
+
+.footer-subscribe-form-button {
+  border-radius: 4px;
+  margin-left: 24px;
+  padding: 8px 24px;
+  background-color: var(--iris);
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-form-button:hover,
+.footer-subscribe-form-button:focus,
+.footer-subscribe-form-button:active {
+  background-color: var(--green);
+  cursor: pointer;
+}
+
+.footer-subscribe-form-button-wrap {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-subscribe-form-button-icon {
+  fill: currentColor;
+}
