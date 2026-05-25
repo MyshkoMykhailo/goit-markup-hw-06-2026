@@ -1,15 +1,13 @@
 .page-footer {
-  padding: 100px 0;
+  padding: 96px 0;
   background-color: var(--navy-blue);
 }
 
-.footer-container {
+/*.footer-container {
   display: flex;
-}
-
-.footer-textual {
-  margin-right: 120px;
-}
+  flex-wrap: wrap;
+  justify-content: center;
+}*/
 
 .footer-description {
   color: var(--cloud);
@@ -21,8 +19,11 @@
   margin-bottom: 16px;
 }
 
-.footer-description {
-  max-width: 264px;
+@media (max-width: 767.98px) {
+  .footer-logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .footer-part-heading {
@@ -58,19 +59,20 @@
   fill: var(--cloud);
 }
 
-.footer-subscribe-form-wrapper {
+/*.footer-subscribe-form-wrapper {
   margin-left: auto;
-}
+}*/
 
 /*.footer-subscribe-form {
   margin-left: auto;
 }*/
 
 .footer-subscribe-form-input {
+  display: block;
   border: 1px solid var(--white);
   border-radius: 4px;
   height: 40px;
-  width: 264px;
+  width: 100%;
   padding: 8px 16px;
   margin: 0;
   outline: none;
@@ -94,14 +96,20 @@
 }
 
 .footer-subscribe-form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   border-radius: 4px;
   margin-left: 24px;
-  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
   background-color: var(--iris);
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.04em;
   color: var(--white);
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -118,5 +126,73 @@
 }
 
 .footer-subscribe-form-button-icon {
+  margin-left: 16px;
   fill: currentColor;
+}
+
+@media (max-width: 767.98px) {
+  .footer-part-heading,
+  .footer-logo {
+    text-align: center;
+  }
+  .footer-subscribe-form-input {
+    margin-bottom: 16px;
+  }
+
+  .footer-subscribe-form-button,
+  .footer-socials-list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1157.98px) {
+  .footer-container {
+    width: 768pd;
+    padding: 0 108px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-textual {
+    margin-right: 24px;
+  }
+
+  .footer-description {
+    max-width: 264px;
+  }
+
+  .footer-subscribe-form {
+    display: flex;
+  }
+
+  .footer-subscribe-form-input {
+    width: 264px;
+  }
+}
+
+@media (max-width: 1157.98px) {
+  .footer-textual,
+  .footer-socials {
+    margin-bottom: 72px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .page-footer {
+    padding: 100px 0;
+  }
+
+  .footer-textual {
+    margin-right: 120px;
+  }
+
+  .footer-socials {
+    margin-right: 83px;
+  }
 }

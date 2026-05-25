@@ -4,7 +4,10 @@
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 72px;
+  justify-content: center;
 }
 
 .team-list-item {
@@ -14,7 +17,7 @@
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: var(--white);
-  flex-basis: calc((100% - 72px) / 4);
+  width: 264px;
 }
 
 .team-list-item-img {
@@ -33,7 +36,6 @@
   border-right: 1px solid var(--cornflower);
 }
 
-.team-list-member-header,
 .team-list-member-description {
   margin-bottom: 8px;
 }
@@ -61,4 +63,10 @@
 
 .team-list-member-socials-icon {
   fill: var(--cloud);
+}
+
+@media (min-width: 768px) {
+  .team-list {
+    row-gap: 64px;
+  }
 }
