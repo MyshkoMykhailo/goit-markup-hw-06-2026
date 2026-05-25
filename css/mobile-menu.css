@@ -22,6 +22,8 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 111%;
+  color: var(--navy-blue);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-navigation-list-link:hover,
@@ -43,6 +45,10 @@
   font-size: 20px;
   line-height: 120%;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-address-list-link.tel {
+  color: var(--iris);
 }
 
 .mobile-address-list-item:first-child {
