@@ -32,6 +32,10 @@
     font-size: 36px;
     line-height: 1.11;
   }
+
+  .features-list-item-description {
+    font-weight: 500;
+  }
 }
 
 @media (min-width: 768px) {
